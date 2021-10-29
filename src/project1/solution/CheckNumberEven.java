@@ -1,4 +1,4 @@
-package project1;
+package project1.solution;
 
 import java.util.Scanner;
 
@@ -19,6 +19,6 @@ public class CheckNumberEven {
 
         // Please don't change anything before this line. Start your code after this line.
 
-
+        System.out.println(number % 2 == 0);
     }
 }

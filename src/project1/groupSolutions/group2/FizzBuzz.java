@@ -1,4 +1,4 @@
-package project1;
+package project1.groupSolutions.group2;
 
 import java.util.Scanner;
 
@@ -25,5 +25,22 @@ public class FizzBuzz {
         // Please don't change anything before this line. Start your code after this line.
 
 
+        if (number %5 == 0 && number %3 == 0) System.out.println("fizzbuzz");
+        else
+        if (number %5 ==0) System.out.println("fizz");
+        else
+        if (number %3 ==0) System.out.println("buzz");
+        else
+        {
+            System.out.println(number);
+
+        }
+
+
+
+
+
+
     }
+
 }

@@ -1,8 +1,9 @@
-package project1;
+package project1.groupSolutions.group2;
 
 import java.util.Scanner;
 
-public class CheckNumberEven {
+public class checkNumberEven {
+
     /*
         Given an int number. Check if the number is even or not
 
@@ -19,6 +20,12 @@ public class CheckNumberEven {
 
         // Please don't change anything before this line. Start your code after this line.
 
+        if(number % 2 == 0) System.out.println("true");
+        else {
+            System.out.println("false");
+        }
+
 
     }
+
 }

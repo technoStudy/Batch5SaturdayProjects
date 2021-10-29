@@ -1,5 +1,6 @@
-package project1;
+package project1.solution;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class RandomNum {
@@ -17,6 +18,11 @@ public class RandomNum {
 
         // Please don't change anything before this line. Start your code after this line.
 
+        System.out.println((int)(Math.random() * (max+1)));  // Note that we need to use max+1 in order to make max inclusive.
 
+        /* Or alternatively:
+        Random random = new Random();
+        System.out.println(random.nextInt(max+1));
+        */
     }
 }

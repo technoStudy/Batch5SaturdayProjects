@@ -1,4 +1,4 @@
-package project1;
+package project1.solution;
 
 import java.util.Scanner;
 
@@ -31,7 +31,21 @@ public class GetTotal {
         // Use Strings num1 , num2 , num3
         // Please don't change anything before this line. Start your code after this line.
 
+        num1 = num1.replaceAll("[^0-9]", "");
+        num2 = num2.replaceAll("[^0-9]", "");
+        num3 = num3.replaceAll("[^0-9]", "");
+        /*
+        Or alternatively:
+        num1 = num1.substring(1);
+        num2 = num2.substring(1);
+        num3 = num3.substring(1);
+         */
 
+        int parse1 = Integer.parseInt(num1);
+        int parse2 = Integer.parseInt(num2);
+        int parse3 = Integer.parseInt(num3);
 
+        int total = parse1 + parse2 + parse3;
+        System.out.println("The total is: " + total);
     }
 }

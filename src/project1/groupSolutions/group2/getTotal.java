@@ -1,8 +1,9 @@
-package project1;
+package project1.groupSolutions.group2;
 
 import java.util.Scanner;
 
-public class GetTotal {
+public class getTotal {
+
       /*
         Given three positive numbers as a String with a space between numbers beginning with a symbol or a letter
         i.e. "$15 $20 $30" or "%3 %121 %67" or "€90 €123 €23987"
@@ -24,6 +25,7 @@ public class GetTotal {
         String allElements = scanner.nextLine();
         String[] elements = allElements.split(" ");
 
+
         String num1 = elements[0];  // "$15"
         String num2 = elements[1];  // "$20"
         String num3 = elements[2];  // "$30"
@@ -31,7 +33,7 @@ public class GetTotal {
         // Use Strings num1 , num2 , num3
         // Please don't change anything before this line. Start your code after this line.
 
-
-
+        System.out.println(Integer.parseInt(num1.substring(1, num1.length())) + Integer.parseInt(num2.replace("$",
+                "")) + Integer.parseInt(num3.substring(1, num3.length())));
     }
 }

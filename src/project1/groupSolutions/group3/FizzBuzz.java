@@ -1,10 +1,11 @@
-package project1;
+package project1.groupSolutions.group3;
 
 import java.util.Scanner;
 
 public class FizzBuzz {
+
     /*
-        Given a int number
+        Given an int number
             -print "fizz" when given number is divisible by 5
             -print "buzz" when given number is divisible by 3
             -print "fizzbuzz" when given number is divisible by both 3 and 5
@@ -24,6 +25,19 @@ public class FizzBuzz {
 
         // Please don't change anything before this line. Start your code after this line.
 
+        if (number % 5 == 0 && number % 3 == 0) {
+            System.out.println("fizzbuzz");
+        }
+        else if (number % 5 == 0) {
+            System.out.println("fizz");
+        }
+        else if (number % 3 == 0) {
+            System.out.println("buzz");
+        } else if (number % 5 != 0 || number % 3 != 0) {
+            System.out.println("same number: " + number);
+
+
+        }
 
     }
 }
