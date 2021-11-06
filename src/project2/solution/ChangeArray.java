@@ -1,5 +1,6 @@
-package project2;
+package project2.solution;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ChangeArray {
@@ -20,7 +21,12 @@ public class ChangeArray {
 //        Code starts here
 //        You should use fruitArray (given above)
 
-
+        for (int i = 0; i < fruitArray.length; i++) {
+            if (fruitArray[i].equals("Orange")) {
+                fruitArray[i] = "Apple";
+            }
         }
+        System.out.println(Arrays.toString(fruitArray));
     }
+}
 

@@ -8,7 +8,7 @@ public class SumTotal {
         if the String has $ multiply the value by 3.2
         if the String has € multiply the value by 4.2
         if the element has no $ or € use its own number value
-        Print the sum of all values  // (output is to be 441.4)
+        Print the sum of all values rounded to one decimal place // (output is to be 441.4)
      */
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package project2;
+package project2.solution;
 
 import java.util.Scanner;
 
@@ -26,7 +26,7 @@ public class SameFirstAndLast {
 //      Your code starts here, ignore the above codes it is related to test class.
 //      Use myArray
 
-
+        System.out.println(myArray[0] == myArray[myArray.length - 1]);
     }
 }
 

@@ -1,4 +1,4 @@
-package project2;
+package project2.solution;
 
 import org.junit.After;
 import org.junit.Assert;

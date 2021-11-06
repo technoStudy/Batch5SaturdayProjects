@@ -1,4 +1,7 @@
-package project2;
+package project2.solution;
+
+import java.util.Arrays;
+import java.util.Random;
 
 public class RandomCharArray {
       /*
@@ -10,7 +13,13 @@ public class RandomCharArray {
      */
 
     public static void main(String[] args) {
+        Random rdm = new Random();
+        int rdmLen = rdm.nextInt(21) + 2;
+        char[] charArray = new char[rdmLen];
 
-
+        for (int i = 0; i < charArray.length; i++) {
+            charArray[i] = (char) (rdm.nextInt('Z' - 'A' + 1) + 'A');
+        }
+        System.out.println(Arrays.toString(charArray));
     }
 }

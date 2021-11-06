@@ -1,4 +1,4 @@
-package Week2.project2;
+package project2.groupSolutions.group2;
 
 import java.util.Scanner;
 

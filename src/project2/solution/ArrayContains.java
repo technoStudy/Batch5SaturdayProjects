@@ -1,5 +1,6 @@
-package project2;
+package project2.solution;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayContains {
@@ -40,10 +41,17 @@ public class ArrayContains {
 //        Start coding here and ignore the above codes.Code above is necessary for the test class.
 //        Use the arrays called outer and inner
 
+        boolean isContained = true;
+        for (int i : inner) {
+            int indexNum = Arrays.binarySearch(outer, i);
+            if (indexNum < 0) {
+                isContained = false;
+                break;
+            }
+        }
+        System.out.println(isContained);
 
-
-
-
-
+//        Very advanced solution:
+//        System.out.println(Arrays.stream(inner).allMatch(x -> Arrays.binarySearch(outer, x) >= 0));
     }
 }

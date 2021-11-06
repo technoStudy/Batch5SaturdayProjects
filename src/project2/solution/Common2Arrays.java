@@ -1,4 +1,4 @@
-package project2;
+package project2.solution;
 
 import java.util.Scanner;
 
@@ -38,6 +38,6 @@ public class Common2Arrays {
          Use array1 and array2 (given above).
  */
 
-
+        System.out.println(array1[0] == array2[0] || array1[array1.length - 1] == array2[array2.length - 1]);
     }
 }

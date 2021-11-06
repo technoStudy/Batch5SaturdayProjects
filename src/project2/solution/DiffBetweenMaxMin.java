@@ -1,4 +1,4 @@
-package project2;
+package project2.solution;
 
 import java.util.Scanner;
 
@@ -28,7 +28,17 @@ public class DiffBetweenMaxMin {
 //        Your code starts here. Don't remove or change anything before this line.
 //        Use myArray above
 
+        int max = myArray[0];
+        int min = myArray[0];
+        for(int i = 1; i < myArray.length; i++){
+            min = Math.min(myArray[i],min);
+            max = Math.max(myArray[i],max);
+        }
+        System.out.println(max-min);
 
-
+//        Advanced solution:
+//        int min = Arrays.stream(myArray).min().getAsInt();
+//        int max = Arrays.stream(myArray).max().getAsInt();
+//        System.out.println(max-min);
     }
 }
