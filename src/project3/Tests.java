@@ -162,7 +162,7 @@ public class Tests {
 //        int[] arr = {0, 2, 4, 12, 8, 6, 102};
 //        boolean result = t1.threeEvenOrOdd(arr);
 //        String message = "Array is : " + Arrays.toString(arr);
-//        Assert.assertTrue(message, result);
+//        Assert.assertFalse(message, result);
 //    }
 //
 //    @Test
@@ -180,7 +180,7 @@ public class Tests {
 //        int[] arr = {7, 13, 17, 1, 25, 37};
 //        boolean result = t1.threeEvenOrOdd(arr);
 //        String message = "Array is : " + Arrays.toString(arr);
-//        Assert.assertTrue(message, result);
+//        Assert.assertFalse(message, result);
 //    }
 //
 //    @Test
