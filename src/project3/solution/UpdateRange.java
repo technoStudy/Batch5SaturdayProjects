@@ -1,4 +1,4 @@
-package  project3;
+package project3.solution;
 
 /*
    Create a method whose name is updateRange
@@ -19,6 +19,18 @@ package  project3;
    it returns [1,6,12,-1,22,-1,30,-1]
  */
 
-public class UpdateRange {
+import java.util.stream.IntStream;
 
+public class UpdateRange {
+    public int[] updateRange(int[] numbers, int lowerBound, int upperBound) {
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] > lowerBound && numbers[i] < upperBound)
+                numbers[i] = -1;
+            else
+                numbers[i] = numbers[i];
+        }
+//        Alternative to the for loop above, we may use IntStream class
+//        IntStream.range(0, numbers.length).filter(i -> numbers[i] > lowerBound && numbers[i] < upperBound).forEach(i -> numbers[i] = -1);
+        return numbers;
+    }
 }

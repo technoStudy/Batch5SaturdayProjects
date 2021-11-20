@@ -1,11 +1,11 @@
-package  project3;
+package project3.groupSolutions.group4;
 
 //  (You will create two methods in this assignment)
 
 /*
    Create a method whose name is gaussSumOf
        Information:
-          Gauss sum of a number is the sum of the all numbers from 1 to that number (inclusive).
+          Gauss sum of a number is the sum of the all numbers from 1 to that number.
           For example:
           Gauss sum of 7 is 1+2+3+4+5+6+7 = 28
    As parameters the method takes a positive int
@@ -29,5 +29,18 @@ package  project3;
  */
 
 public class GaussSum {
+    public int gaussSumOf(int number){
+        int sum = 0;
+
+        for (int i = 1; i <= number; i++) {
+            sum += i;
+        }
+        return sum;
+    }
+    public int sumOfSquaresOfGaussSums(int number1, int number2){
+         return (int) (Math.pow(gaussSumOf(number1),2) + Math.pow(gaussSumOf(number2),2));
+
+         //Why IntelliJ insisted on (int)???
+    }
 
 }

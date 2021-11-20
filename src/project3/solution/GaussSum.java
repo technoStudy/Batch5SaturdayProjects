@@ -1,4 +1,4 @@
-package  project3;
+package project3.solution;
 
 //  (You will create two methods in this assignment)
 
@@ -29,5 +29,21 @@ package  project3;
  */
 
 public class GaussSum {
+    public int gaussSumOf(int number) {
+        int sum = 0;
+        for (int i = 0; i <= number; i++) {
+            sum += i;
+        }
+        return sum;
 
+//        Alternatively, by using the mathematical formula of Gauss sum
+//        return (number*(number+1))/2;
+    }
+
+    public int sumOfSquaresOfGaussSums(int number1, int number2) {
+        return (int) (Math.pow(gaussSumOf(number1), 2) + Math.pow(gaussSumOf(number2), 2));
+
+        // Second way (without using Math class)
+//        return gaussSumOf(number1) * gaussSumOf(number1) + gaussSumOf(number2) * gaussSumOf(number2);
+    }
 }

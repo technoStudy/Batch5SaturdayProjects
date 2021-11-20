@@ -88,7 +88,7 @@ public class Tests {
 //    @Test
 //    public void generatePalindromeNumberFrom1() {
 //        String actual = palindrome.generatePalindromeNumberFrom(123, false);
-//        String expected = "123321";
+//        String expected = "12321";
 //        Assert.assertEquals(expected, actual);
 //    }
 //
@@ -124,6 +124,18 @@ public class Tests {
 //    public void generatePalindromeNumberFrom6() {
 //        String actual = palindrome.generatePalindromeNumberFrom(30, true);
 //        String expected = "3003";
+//        Assert.assertEquals(expected, actual);
+//    }
+//    @Test
+//    public void generatePalindromeNumberFrom7() {
+//        String actual = palindrome.generatePalindromeNumberFrom(30_000, true);
+//        String expected = "3000000003";
+//        Assert.assertEquals(expected, actual);
+//    }
+//    @Test
+//    public void generatePalindromeNumberFrom8() {
+//        String actual = palindrome.generatePalindromeNumberFrom(30_000, false);
+//        String expected = "300000003";
 //        Assert.assertEquals(expected, actual);
 //    }
 //

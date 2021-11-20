@@ -1,4 +1,4 @@
-package  project3;
+package project3.groupSolutions.group2;
 
 /*
    Create a method whose name is updateRange
@@ -9,7 +9,7 @@ package  project3;
        Upper bound is always given as bigger than or equal to lower bound.
    It returns an int array
 
-   The method changes all elements in the int array which are between  (exclusively) the lower bound and the upper bound to -1.
+   The method changes all elements in the int array which are between the lower bound and the upper bound to -1.
    It keeps the elements in the array if the elements is equal to or out of the range of the lower and upper boundaries.
 
    Sample:
@@ -19,6 +19,24 @@ package  project3;
    it returns [1,6,12,-1,22,-1,30,-1]
  */
 
+import java.util.Arrays;
+
 public class UpdateRange {
 
+//    public static void main(String[] args) {
+//
+//        int array[] ={1,6,12,15,22,18,30,16};
+//        System.out.println(Arrays.toString(updateRange(array,12,20)));
+//
+//    }
+
+    public static int[] updateRange(int[] arr, int lowerBound, int upperBound) {
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr[i] > lowerBound && arr[i] < upperBound)
+                arr[i] = -1;
+        }
+
+        return arr;
+    }
 }
