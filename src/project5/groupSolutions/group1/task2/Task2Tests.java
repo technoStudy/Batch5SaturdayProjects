@@ -1,4 +1,4 @@
-package project5.task2;
+package project5.groupSolutions.group1.task2;
 
 import org.junit.Assert;
 import org.junit.Test;

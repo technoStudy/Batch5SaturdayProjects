@@ -13,9 +13,9 @@ package project5.task1;
     -- ElectricityAccount
 
 -	Create a constructor in Customer class to initialize name, areaZipCode and ElectricityAccount.
-    -- If the areaZipcode is between 1000 and 3000 the Electricity rate should be set to 0.9
-    -- If areaZipCode is between 3000 and 4500 the Electricity rate should be set to 0.8
-    -- If areaZipCode is between 4500 and 7000 Electricity rate should be set to 0.6
+    -- If the areaZipcode is between 1000 (inclusive) and 3000 (exclusive) the Electricity rate should be set to 0.9
+    -- If areaZipCode is between 3000 (inclusive) and 4500 (exclusive) the Electricity rate should be set to 0.8
+    -- If areaZipCode is between 4500 (inclusive) and 7000 (exclusive) Electricity rate should be set to 0.6
     -- Otherwise it should stay 0.7
 
 -	Overload constructor where you can initialize all the fields in Customer class.
@@ -28,7 +28,8 @@ package project5.task1;
     customer.consumeElectricity(50);
     After calling methods above customer.totalWph should be equal to 350.
 
--	Create a method in ElectricityAccount class, named 'calculateBill' that calculates bill as bill = rate * totalWph.
+-	Create a method in ElectricityAccount class, named 'calculateBill' that calculates bill as bill = rate * totalWph
+    and returns bill as a double value.
  */
 public class Task1 {
 }

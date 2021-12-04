@@ -1,4 +1,4 @@
-package project5.task2;
+package project5.groupSolutions.group2.task2;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -21,7 +21,7 @@ public class Task2Tests {
 //        Assert.assertEquals("\nWage: ", expectedWage, employee.calculateWage(extraHours), 0.0);
 //        Assert.assertEquals("\nNumber of total employees: ", 1, Employee.getNumberOfEmployees());
 //    }
-//
+
 //    @Test
 //    public void employeeTest2() {
 //        double baseSalary = 85_450.75;
@@ -34,37 +34,37 @@ public class Task2Tests {
 //        Assert.assertEquals("\nWage: ", expectedWage, employee.calculateWage(extraHours), 0.0);
 //        Assert.assertEquals("\nNumber of total employees: ", 2, Employee.getNumberOfEmployees());
 //    }
-//
-//    @Test
-//    public void employeeTest3() {
-//        Employee employee3 = new Employee(100, 22);
-//        Employee employee4 = new Employee(100, 22);
-//        Employee employee5 = new Employee(100, 22);
-//        Employee employee6 = new Employee(100, 22);
-//        Assert.assertEquals("\nNumber of total employees: ", 6, Employee.getNumberOfEmployees());
-//    }
-//
-//    @Test
-//    public void employeeTest4() {
-//        Assert.assertThrows(Exception.class, () -> new Employee(0, 22));
-//        Assert.assertEquals("\nNumber of total employees: ", 6, Employee.getNumberOfEmployees());
-//    }
-//
-//    @Test
-//    public void employeeTest5() {
-//        Assert.assertThrows(Exception.class, () -> new Employee(-100_000, 22));
-//        Assert.assertEquals("\nNumber of total employees: ", 6, Employee.getNumberOfEmployees());
-//    }
-//
-//    @Test
-//    public void employeeTest6() {
-//        Assert.assertThrows(Exception.class, () -> new Employee(100_000, -22));
-//        Assert.assertEquals("\nNumber of total employees: ", 6, Employee.getNumberOfEmployees());
-//    }
-//
-//    @Test
-//    public void employeeTest7() {
-//        Assert.assertThrows(Exception.class, () -> new Employee(-100_000, -22));
-//        Assert.assertEquals("\nNumber of total employees: ", 6, Employee.getNumberOfEmployees());
-//    }
+
+    @Test
+    public void employeeTest3() {
+        Employee employee3 = new Employee(100, 22);
+        Employee employee4 = new Employee(100, 22);
+        Employee employee5 = new Employee(100, 22);
+        Employee employee6 = new Employee(100, 22);
+        Assert.assertEquals("\nNumber of total employees: ", 6, Employee.getNumberOfEmployees());
+    }
+
+    @Test
+    public void employeeTest4() {
+        Assert.assertThrows(Exception.class, () -> new Employee(0, 22));
+        Assert.assertEquals("\nNumber of total employees: ", 6, Employee.getNumberOfEmployees());
+    }
+
+    @Test
+    public void employeeTest5() {
+        Assert.assertThrows(Exception.class, () -> new Employee(-100_000, 22));
+        Assert.assertEquals("\nNumber of total employees: ", 6, Employee.getNumberOfEmployees());
+    }
+
+    @Test
+    public void employeeTest6() {
+        Assert.assertThrows(Exception.class, () -> new Employee(100_000, -22));
+        Assert.assertEquals("\nNumber of total employees: ", 6, Employee.getNumberOfEmployees());
+    }
+
+    @Test
+    public void employeeTest7() {
+        Assert.assertThrows(Exception.class, () -> new Employee(-100_000, -22));
+        Assert.assertEquals("\nNumber of total employees: ", 6, Employee.getNumberOfEmployees());
+    }
 }

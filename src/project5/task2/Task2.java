@@ -9,7 +9,7 @@ package project5.task2;
 -	Create a constructor in Employee class to initialize baseSalary and hourlyRate
     -- baseSalary cannot be less than or equal to zero
     -- hourlyRate cannot be less than zero
-    -- If these conditions are not true while initializing baseSalary and hourlyRate throw an exception.
+    -- If these conditions are not true while initializing baseSalary and hourlyRate throw an exception (IllegalArgumentException).
     -- [I know you haven't learned exceptions yet but throwing an exception is easy thing, you can google it :)](A message from Mr. Halit!!!)
 
 -	Create a method in Employee class called calculateWage with a parameter of which is extraHours.
