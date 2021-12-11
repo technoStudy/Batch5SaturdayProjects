@@ -4,9 +4,10 @@ public class GuessGame {
 
   /*
         Create a non-static method whose name is letsGuess().
-        This method takes an int as a parameter, say, secretNumber.
+        It does not take any parameter.
         Return type is void.
 
+        This method produces a random number, say, secretNumber.
         In this method you must continue to guess number(s) until you hit the correct number which is the secretNumber.
         Method prints "Guess a number between 0 and 100 (inclusive): " in the beginning of the game.
         When the guess number is less than the secretNumber then print "Your number is small. Try a bigger number: ".
@@ -45,7 +46,7 @@ public class GuessGame {
       "Press 0 if you do NOT want to continue."
     If player types 1 then re-start the game.
     If player types 0 then stop executing.
-    If player enter something else then print
+    If player enter something else then keep asking and print
       "Please enter a valid option!"
       "Press 1 if you want to continue playing."
       "Press 0 if you do NOT want to continue."
@@ -56,7 +57,7 @@ public class GuessGame {
     Print number of lost and won games. e.g. "You won 4 times and lost 3 times so far."
     Pay attention to plurality while printing the message. e.g. if there is only 1 game won or lost,
     then the message should be like "You won 1 time and lost 3 times so far." or "You won 2 times and lost 1 time so far."
-    If there is no game won or lost then the message should be like: "You have not won yet and lost 7 times so for." or
+    If there is no game won or lost then the message should be like: "You have not won yet and lost 7 times so far." or
     "You won 1 time and have not lost so far."
      */
 }
