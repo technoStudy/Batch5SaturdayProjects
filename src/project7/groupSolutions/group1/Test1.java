@@ -1,15 +1,15 @@
-package project7;
+package project7.groupSolutions.group1;
 
 import org.junit.Assert;
 import org.junit.Test;
 
 public class Test1 {
-    @Test
-    public void test1() {
+   @Test
+   public void test1() {
         PriceForOneLaptop p1 = new PriceForOneLaptop();
-        int laptopID = 1100000;
+       int laptopID = 1100000;
         int actual = p1.getPrice(laptopID);
-        int expected = 850;
+       int expected = 850;
         Assert.assertEquals("Laptop id is " + laptopID, expected, actual);
     }
 
@@ -22,7 +22,7 @@ public class Test1 {
         Assert.assertEquals("Laptop id is " + laptopID, expected, actual);
     }
 
-    @Test
+   @Test
     public void test3() {
         PriceForOneLaptop p1 = new PriceForOneLaptop();
         int laptopID = 1100002;
@@ -39,7 +39,7 @@ public class Test1 {
         int discount = 20;
         int expected = 2120;
 
-        int price1 = p1.getPrice(laptopID1);
+       int price1 = p1.getPrice(laptopID1);
         int price2 = p1.getPrice(laptopID2);
         int actual = price1 + price2;
         actual = p1.getDiscount(actual, discount);

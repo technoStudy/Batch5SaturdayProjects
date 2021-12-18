@@ -1,4 +1,4 @@
-package project7;
+package project7.solution;
 
 import org.junit.Assert;
 import org.junit.Test;

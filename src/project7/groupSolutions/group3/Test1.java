@@ -1,4 +1,4 @@
-package project7;
+package project7.groupSolutions.group3;
 
 import org.junit.Assert;
 import org.junit.Test;
