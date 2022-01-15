@@ -9,7 +9,9 @@ public class HousePrices extends House{
 
     private int price = 0;
 
-
+    public int getPrice() {
+        return price;
+    }
     /*
     Create the constructor of the class.
     Calculate the price of the house by the help of the method calculateTotalPriceOfHouse below

@@ -1,0 +1,53 @@
+In this project you are going to make three webpages which allows a person to submit his/her job application.
+You need to use HTML and CSS. You are not expected to use JavaScript.
+
+- Background color of the body is light yellow
+- Background color of the header and button divisions are light green
+- Color code of the buttons is 63D125
+- Techno study logo is provided in this project folder.
+- Please pay attention to
+  * in page reference links (go to top and bottom links)
+  * internal links (links from page to page)
+  * external links (links to remote servers on internet)
+  * bold texts
+  * italic text
+  * underlined text
+  * highlighted text
+  * the layout of the page
+  * design and colors in the page
+  * bulleted texts
+  * and other details that might not mention here
+
+
+The first webpage:
+
+- Title is "Career Page"
+- The design and the layout of the page is supposed to be almost exactly as in the screenshot_page1_top and screenshot_page1_bottom
+- In order to save time for you, the long texts of the page are provided as a plain text in another file in this project folder.
+- External link for "EEO Law Poster" is https://s3.amazonaws.com/ob.bah.com/recruiting/eeopost.pdf
+- External link for "EEO Law Supplement" is https://s3.amazonaws.com/ob.bah.com/recruiting/EEO+is+the+Law+Poster+Supplement.pdf
+- Mail address for "disability@technostudy.com" link is "this_is_a_fake_address@techno.study"
+- External links should open in a new tab or windows
+- Apply Now button is linked to the second page here
+- When Apply Now button pressed and external links, the linked page should open IN A NEW TAB.
+
+
+The second page:
+
+- Title is "Application Form"
+- The design and the layout of the page is supposed to be almost exactly as in the screenshot_page2
+- States for branches are Georgia, New Jersey,New York, Ohio and Texas (for dropdown menu)
+- Do not forget to synchronize the radio buttons. (when one selected other should be deselected automatically)
+- E-mail for sending resume link is "hr@techno.study" (FYI: all emails are fake)
+- submit button is linked to the third page here.
+- When Submit button pressed, the linked page should NOT open in a new tab, but in the same tab.
+
+
+The third page:
+
+- Title is "Submission Confirm"
+- The design and the layout of the page is supposed to be almost exactly as in the screenshot_page
+- The URL link of this page must contain the information passed by the form (as query parameters) and it should look something like this:
+  http://localhost:63342/Batch5SaturdayProjects/project10/solution/submission.html?first_name=Abuzer&last_name=Kilkuyruk&adress1=125589+My+Street&adress2=&city=Dublin&zipcode=43026&state=OHIO&dob=&tel=6546546546&email=myemail%40gmail.com&gender=male&about_yourself=I+am+cool&state=georgia&relocation=on&over18=on&work_authorization=on&accept_terms=on
+ 
+Good luck.
