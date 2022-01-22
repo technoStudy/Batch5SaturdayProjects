@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+</head>
+<body style="background-color:#FFFFE0;">
+
+    <form action="SubmissionConfirm.html" method="get">
+    <div style="text-align:center">
+        <p>
+        <img src="webPageLogo.png" height="75" width="150" style="text-align:center">
+        <h2 style="background-color:#90EE90; color:black">Application Form</h2>
+
+        </p>
+
+        <hr style="border-top:10px solid #90EE90" />
+        <hr style="border-top:5px solid #90EE90 ; width:80%" />
+        <hr style="border-top:3px solid #90EE90 ; width:60%" />
+        <hr style="border-top:1px solid #90EE90 ; width:40%" />
+
+    </div>
+        <label for="firstNameInput">First Name: </label>
+        <input type="text" id="firstNameInput" name="firstNameInput" width="300">&emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+
+        <label for="lastNameInput">Last Name: </label>
+        <input type="text" id="lastNameInput" name="lastNameInput"><br><br>
+
+        <label for="address1">Address 1: </label>
+        <input type="text" id="address1" placeholder="Street name and number" name="address1">&emsp;&emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+
+        <label for="address2">Address 2: </label>
+        <input type="text" id="address2" placeholder="Apt no if applies" name="address2"><br><br>
+
+        <label for="city">City: </label>
+        <input type="text" id="city" name="city">&emsp;&emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+
+        <label for="zipCode">Zip Code: </label>
+        <input type="number" id="zipCode" name="zipCode">&emsp;&emsp;
+
+        <label for="stateInput">State: </label>
+        <input type="text" id="stateInput" name="stateInput"><br><br>
+
+        <label for="dobInput">Date of Birth: </label>
+        <input type="date" id="dobInput" name="dobInput">&emsp;&emsp;
+
+        <label for="phoneInput">Phone: </label>
+        <input type="number" id="phoneInput" name="phoneInput">&emsp;&emsp;
+
+        <label for="emailInput">E-mail: </label>
+        <input type="email" id="emailInput" name="emailInput"><br><br>
+
+        Gender: &emsp;
+        <label for="radioButton1">Male</label>
+        <input type="radio" id="radioButton1" name="Gender" checked>&emsp;
+
+        <label for="radioButton2">Female</label>
+        <input type="radio" id="radioButton2" name="Gender">&emsp;
+
+        <label for="radioButton3">Prefer not to say</label>
+        <input type="radio" id="radioButton3" name="Gender"><br><br>
+
+        Briefly tell about yourself:<br>
+        <label for="textArea"></label>
+        <textarea rows="5" cols="80" id="textArea" placeholder="(Max 1000 characters)" maxlength="1000"></textarea> <br><br>
+
+        Which branch do you apply for?<br>
+        Please select only one state:<br>
+        <select name="State">
+            <option value="Georgia">Georgia</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New York">New York</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Texas">Texas</option>
+        </select> <br><br>
+
+        <input type="checkbox" id="checkbox1" name="checkbox1">
+        <label for="checkbox1">I am willing to relocate.</label><br>
+
+        <input type="checkbox" id="checkbox2" name="checkbox2">
+        <label for="checkbox2">I am over 18 years old.</label><br>
+
+        <input type="checkbox" id="checkbox3" name="checkbox3">
+        <label for="checkbox3">I have work authorization for the US.</label><br>
+
+        <input type="checkbox" id="checkbox4" name="checkbox4">
+        <label for="checkbox4">I am a protected veteran.</label><br>
+
+        <input type="checkbox" id="checkbox5" name="checkbox5">
+        <label for="checkbox5">I consider myself as a disabled person.</label><br><br>
+
+        <input type="checkbox" id="checkbox6" name="checkbox6">
+        <label for="checkbox6"><b>I have read the terms and conditions of Techno Study and accept them all.</b></label><br><br>
+
+        <div style="color:blue ; text-align:center">
+            <a href="mailto:hr@techno.study">E-mail us your resume and related documents.</a><br><br>
+        </div>
+
+        <div style="background-color:#90EE90 ; text-align:center">
+            <br><br>
+            <a href="SubmissionConfirm.html"><button style="background-color:green">SUBMIT</button></a>
+            <br><br><br>
+        </div>
+
+    </form>
+
+</body>
+</html>

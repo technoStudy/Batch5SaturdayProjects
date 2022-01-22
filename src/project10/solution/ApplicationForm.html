@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+</head>
+
+<body bgcolor="lightyellow">
+<div style="text-align:center;">
+    <p>
+        <img id="logo" src="techno study logo.png" width="160px" height="80px" alt="logo">
+    </p>
+</div>
+<div style="text-align:center;">
+    <h1 style="background-color:lightgreen;" id="top_header">Application Form</h1>
+    <hr size="7px" color="lightgreen">
+    <hr width="75%" size="4px" color="lightgreen">
+    <hr width="40%" size="2px" color="lightgreen">
+</div>
+<div>
+    <form id="application_form" action="submission.html">
+        <p>
+            <label style="padding-right: 50px;">
+                <span>First Name:</span>
+                <input type="text" name="first_name">
+            </label>
+            <label style="padding-left: 50px;">
+                <span>Last Name:</span>
+                <input type="text" name="last_name">
+            </label>
+        </p>
+        <p>
+            <label style="padding-right: 50px;">
+                <span>Address 1:</span>
+                <input type="text" placeholder="Street name and number" name="adress1">
+            </label>
+            <label style="padding-left: 50px;">
+                <span>Address 2:</span>
+                <input type="text" placeholder="Apt no if applies" name="adress2">
+            </label>
+        </p>
+        <p>
+            <label style="padding-right: 50px;">
+                <span>City:</span>
+                <input type="text" name="city">
+            </label>
+            <label style="padding-left: 50px; padding-right: 50px;">
+                <span>Zip Code:</span>
+                <input type="number" name="zipcode">
+            </label>
+            <label style="padding-left: 50px;">
+                <span>State:</span>
+                <input type="text" name="state">
+            </label>
+        </p>
+        <p>
+            <label style="padding-right: 50px;">
+                <span>Date of Birth:</span>
+                <input type="date" name="dob">
+            </label>
+            <label style="padding-left: 50px; padding-right: 50px;">
+                <span>Phone:</span>
+                <input type="number" name="tel">
+            </label>
+            <label style="padding-left: 50px;">
+                <span>E-mail:</span>
+                <input type="email" name="email">
+            </label>
+        </p>
+        <p>
+            <label style="padding-right: 15px;">
+                <span>Gender:</span>
+            </label>
+            <label style="padding-right:15px;">
+                <input type="radio" name="gender" value="male">
+                <span>Male</span>
+            </label>
+            <label style="padding-right: 15px;">
+                <input type="radio" name="gender" value="female">
+                <span>Female</span>
+            </label>
+            <label style="padding-right: 15px;">
+                <input type="radio" name="gender" value="not_said">
+                <span>Prefer not to say</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <span>Briefly tell about yourself:</span>
+                <br>
+                <textarea rows="5" cols="100" maxlength="1000" placeholder="(Max 1000 characters)" name="about_yourself"></textarea>
+            </label>
+        </p>
+        <p>
+            <label>
+                <span>Which branch do you apply for?</span>
+                <br>
+                <span>Please select only one state:</span>
+                <br>
+                <select name="state" id="branch">
+                    <option value="georgia"> Georgia </option>
+                    <option value="new_jersey"> New Jersey </option>
+                    <option value="new_york"> New York</option>
+                    <option value="ohio"> Ohio </option>
+                    <option value="texas"> Texas</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="relocation">
+                <span> I am willing to relocate. </span>
+                <br>
+            </label>
+            <label>
+                <input type="checkbox" name="over18">
+                <span> I am over 18 years old. </span>
+                <br>
+            </label>
+            <label>
+                <input type="checkbox" name="work_authorization">
+                <span> I have work authorization for the US. </span>
+                <br>
+            </label>
+            <label>
+                <input type="checkbox" name="veteran">
+                <span> I am a protected veteran. </span>
+                <br>
+            </label>
+            <label>
+                <input type="checkbox" name="disabled">
+                <span> I consider myself as a disabled person. </span>
+                <br>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="accept_terms">
+                <span><b>I have read the terms and conditions of Techno Study and accept them all.</b></span>
+            </label>
+        </p>
+        <p style="text-align:center">
+            <a href="mailto:hr@techno.study"><b>E-mail us your resume and related documents.</b></a>
+        </p>
+        <div style="text-align: center; background-color:lightgreen;">
+            <br>
+                <button type="submit" style="height:30px; width:100px; background-color:#63D125;" form="application_form">
+                    <b>SUBMIT</b>
+                </button>
+            <br><br>
+        </div>
+    </form>
+</div>
+</body>
+</html>

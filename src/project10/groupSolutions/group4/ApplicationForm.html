@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+        .img-container {
+            text-align: center;
+        }
+        .text_align_color {
+            text-align: center;
+            background-color: lightgreen;
+        }
+        h1 {
+            font-size: 220%;
+        }
+        tab1 {
+            padding-left: 5%;
+        }
+        tab2 {
+            padding-left: 3%;
+        }
+        tab3 {
+            padding-right: 1%;
+        }
+
+        .registerlink {
+            text-align: center;
+        }
+
+
+        .button-container-div {
+            text-align: center;
+            background-color: lightgreen;
+        }
+        button {
+            padding: 6px 10px;
+            background-color: #63D125;
+            margin: 1.2%;
+            font-size: 90%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="img-container">
+        <img src="techno_study_logo.png" width="175px">
+    </div>
+
+    <div class="text_align_color">
+        <h1>Application Form</h1>
+    </div>
+
+    <div class="hr_tag">
+        <hr width="100%" size=7 color="lightgreen">
+        <hr width="75%" size=5 color="lightgreen">
+        <hr width="40%" size=3 color="lightgreen">
+    </div>
+
+
+    <form action="SubmissionConfirm.html" method="get">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><tab1></tab1>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname">
+        <br><br>
+
+        <label for="address1">Address 1:</label>
+        <input type="text" id="address1" name="address1" placeholder="Street name and number"><tab1></tab1>
+
+        <label for="address2">Address 2:</label>
+        <input type="text" id="address2" name="address2" placeholder="Apt no if applies">
+        <br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><tab1></tab1>
+
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" id="zipcode" name="zipcode"><tab2></tab2>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state">
+        <br><br>
+
+        <label for="birthday">Date of Birth:</label>
+        <input type="date" id="birthday" name="birthday"><tab1></tab1>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"><tab2></tab2>
+
+        <label for="mail">E-mail:</label>
+        <input type="text" id="mail" name="mail">
+        <br><br>
+
+        <label>Gender:</label><tab3></tab3>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label><tab3></tab3>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label><tab3></tab3>
+        <input type="radio" id="other" name="gender">
+        <label for="other">Prefer not to say</label>
+        <br><br>
+
+        <label for="aboutme">Briefly tell about yourself:</label>
+        <br>
+        <textarea id="aboutme" name="aboutme" rows="5" cols="90" placeholder="(Max 1000 Characters)"></textarea>
+        <br><br>
+
+        <label for="branch">Which branch do you want to apply for<br>
+        Please select only one state:<br></label>
+
+        <select name="branch" id="branch">
+            <option value="Georgia">Georgia</option>
+            <option value="NewJersey">New Jersey</option>
+            <option value="NewYork">New York</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Texas">Texas</option>
+        </select>
+        <br><br>
+
+        <input type="checkbox" id="willingToRelocate" name="willingToRelocate" value="on">
+        <label for="willingToRelocate"> I am willing to relocate.</label><br>
+        <input type="checkbox" id="over18" name="over18" value="on">
+        <label for="over18"> I am over 18 years old.</label><br>
+        <input type="checkbox" id="workAuth" name="workAuth" value="on">
+        <label for="workAuth"> I have work authorization for the US.</label><br>
+        <input type="checkbox" id="protVeteran" name="protVeteran" value="on">
+        <label for="protVeteran"> I am protected veteran.</label><br>
+        <input type="checkbox" id="disabledPerson" name="disabledPerson" value="on">
+        <label for="protVeteran"> I consider myself as a disabled person.</label><br>
+        <br>
+
+        <input type="checkbox" id="termsCheck" name="termsCheck" value="on">
+        <label for="termsCheck"><b>I have read the terms and conditions of Techno Study and accept them all.</b></label>
+        <br><br>
+
+        <div class="registerlink"><a href="mailto:hr@techno.study"><b>E-mail us your resume and related documents.</b></a></div>
+        <br>
+
+        <div class="button-container-div" >
+                <button type="submit"><b>SUBMIT</b></button>
+        </div>
+    </form>
+
+</body>
+</html>
