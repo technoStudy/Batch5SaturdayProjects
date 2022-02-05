@@ -1,0 +1,17 @@
+Under the pages package
+
+You will mainly have:
+- Base class
+- your page classes
+
+In your Base class:
+- You will initialize your web driver. This is not the place to have creation of your driver. You just initialize the driver here.
+- You will initialize WebDriverWait instance
+- you will define methods for the GENERIC (common) actions you need, such as "clickOnElement", "sendKeysToElement", "getTextOfElement", etc
+
+In your page classes:
+ - This class extends the Base class
+ - Use PageFactory
+ - List the selectors by using @FindBy or @FindBys annotations, such as "submitButton", "searchBox", "firstNameBox", etc
+ - Define the action methods SPECIFIC to your elements, such as "clickOnSubmitButton", getTextOfFirstNameBox", sendKeysToSearchBox", etc
+   You will define those element-specific action methods by the help of GENERIC methods in the Base Class

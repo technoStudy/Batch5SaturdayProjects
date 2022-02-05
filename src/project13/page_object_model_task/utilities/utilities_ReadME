@@ -1,0 +1,18 @@
+Utilities package is very much like your tool set.
+
+You can create different kinds of classes you need to use throughout the project.
+The classes and the method under these classes here are possible to be used commonly, and expensive codes.
+This will prevent creating those expensive codes repeatedly.
+
+In this project, you will have Driver class under utilities package.
+This Driver class will have at least getDriver and quitDriver methods under it.
+
+What else could we have under utilities:
+These could be the following, but not limited to:
+- Database class with methods like, accessDatabase, exitDatabase, readFromDatabase, writeToDatabase, etc
+- Screenshot class with methods, takeScreenshot, deleteScreenshot, reportScreenshot, etc
+- API class, with methods getEndpoint, postEndpoint, deleteEndpoint, putEndpoint
+- ManageExelFile class with methods, readFromExelFile, writeToExelFile, exportToExelFile, ImportToExelFile, etc
+- etc
+- etc
+

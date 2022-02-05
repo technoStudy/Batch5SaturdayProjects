@@ -1,0 +1,30 @@
+Under the Project folder
+
+PACKAGES:
+Depending on the complexity of the project, there will be mainly AT LEAST three folders:
+- pages
+- tests
+- utilities
+
+If you use cucumber tool, there will be more folders like:
+- features
+- stepdefinitions
+- runners
+
+As the project grows, you may need more folders to add, such as
+- helper classes
+- reports
+- controllers
+- other modules packages
+- resources
+- etc
+- etc
+
+Bear in your mind that there is no one single rule or way of using POM.
+On the other hand, there are very common use of folders
+
+FILES:
+It is good to have files under the related packages.
+But there are very few files we keep directly under project folder.
+Mainly, we will have testNg.xml file if you use TestNG tool
+And pom.xml file is also very common to use if your project is a Maven project.
