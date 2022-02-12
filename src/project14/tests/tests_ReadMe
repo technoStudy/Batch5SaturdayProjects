@@ -4,7 +4,7 @@ This the the package where test classes live
 
 Apart from the test classes you will optionally have:
 - a helper class if you deem necessary. This usually happens in medium or big size projects.
-- a "Hook" class. This class carries the @before and @After annotations tagged methods.
+- a "Hook" class. This class carries the @before and @After annotations tagged methods. Hook class is usually used with Cucumber tool.
 - and/or controller classes which has some methods which helps to control some features,
   such as "creating users with different roles", "reaching out different endpoints on API", "controlling some database functions"
   This is mostly seen on big projects. You do not need to have a controller class in our project. This was given just for your information.

@@ -7,7 +7,7 @@ This will prevent creating those expensive codes repeatedly.
 In this project, you will have Driver class under utilities package.
 This Driver class will have at least getDriver and quitDriver methods under it.
 
-What else could we have under utilities:
+What else could we have under utilities?:
 These could be the following, but not limited to:
 - Database class with methods like, accessDatabase, exitDatabase, readFromDatabase, writeToDatabase, etc
 - Screenshot class with methods, takeScreenshot, deleteScreenshot, reportScreenshot, etc

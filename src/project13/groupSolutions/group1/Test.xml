@@ -1,0 +1,8 @@
+<suite name="run my test ">
+
+    <test name="run my test in chrome">
+        <classes>
+            <class name="project13.groupSolutions.group1.tests.infoValidation"></class>
+        </classes>
+    </test>
+</suite>

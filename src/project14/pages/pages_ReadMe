@@ -12,6 +12,7 @@ In your Base class:
 In your page classes:
  - This class extends the Base class
  - Use PageFactory
- - List the selectors by using @FindBy or @FindBys annotations, such as "submitButton", "searchBox", "firstNameBox", etc
+ - List the WebElements by using @FindBy or @FindBys annotations, such as "submitButton", "searchBox", "firstNameBox", etc
+ - Keep the web elements private
  - Define the action methods SPECIFIC to your elements, such as "clickOnSubmitButton", getTextOfFirstNameBox", sendKeysToSearchBox", etc
    You will define those element-specific action methods by the help of GENERIC methods in the Base Class

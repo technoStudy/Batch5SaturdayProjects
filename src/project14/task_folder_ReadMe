@@ -1,10 +1,11 @@
 Under the Project folder
 
 PACKAGES:
-Depending on the complexity of the project, there will be mainly AT LEAST three folders:
+Depending on the complexity of the project, there will be mainly AT LEAST three packages:
 - pages
 - tests
 - utilities
+In this project, it is enough to use the three packages mentioned above
 
 If you use cucumber tool, there will be more folders like:
 - features
