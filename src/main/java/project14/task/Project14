@@ -1,0 +1,17 @@
+In this project, you will be testing on http://automationpractice.com/
+Use Page Object Model
+Do never use Thread.sleep
+Create testNg.xml file, so that you may run your test by using this file too.
+Add those two tests to your Regression group by tagging them.
+You will be testing the following two functionalities: "Contact us" and "Place an Order"
+
+NOTE:  Create an account on the page before starting to automate and use that account for automation
+
+1) Contact us
+• You should test this at least 3 different input (use DataProvider)
+
+2) Place an Order
+• You should select a product from HomePage and add to cart
+• You should complete to proceed to checkout process
+• At the end you should verify success message
+• Also you’ll see "order reference" code at the end, you should verify that code in the “Order History and Details” page.

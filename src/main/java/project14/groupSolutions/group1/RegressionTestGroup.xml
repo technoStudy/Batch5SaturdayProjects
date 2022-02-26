@@ -1,0 +1,16 @@
+<suite name="Regression Test Suite">
+
+    <groups>
+        <run>
+            <include name="Regression"/>
+        </run>
+    </groups>
+
+
+    <test name="Regression Test Run">
+        <classes>
+            <class name="project14.groupSolutions.group1.tests.PlaceOrderTests"/>
+        </classes>
+    </test>
+
+</suite>
