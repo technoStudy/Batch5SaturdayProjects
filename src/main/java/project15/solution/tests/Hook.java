@@ -1,8 +1,8 @@
 package project15.solution.tests;
 
-import CampusProjectSolutions.pages.BasePage;
-import CampusProjectSolutions.pages.LoginPage;
-import CampusProjectSolutions.utilities.ReadFromConfigFile;
+import project15.solution.pages.BasePage;
+import project15.solution.pages.LoginPage;
+import project15.solution.utilities.ReadFromConfigFile;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 

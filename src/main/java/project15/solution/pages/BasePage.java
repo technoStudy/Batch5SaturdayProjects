@@ -1,14 +1,16 @@
 package project15.solution.pages;
 
-import CampusProjectSolutions.enums.LocatorType;
+import project15.solution.enums.LocatorType;
+import project15.solution.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import project14.solution.utilities.Driver;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class BasePage {
 
@@ -53,10 +55,23 @@ public class BasePage {
         Driver.quitDriver();
     }
 
-//    protected void selectFromDropDownMenuByIndex(WebElement dropDownMenu, int index) {
-//        Select select = new Select(dropDownMenu);
-//        select.selectByIndex(index);
-//    }
+    protected ArrayList<String> getTextsOfElementList(List<WebElement> elementList) {
+        ArrayList<String> textList = new ArrayList<>();
+        for (WebElement element : elementList) {
+            textList.add(getTextOf(element));
+        }
+        return textList;
+    }
 
+    protected void waitTillElementDisappears(WebElement element) {
+        wait.until(ExpectedConditions.invisibilityOf(element));
+    }
 
+    public void sleepFor(int time) {
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }

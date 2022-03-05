@@ -1,6 +1,5 @@
 package project15.solution.pages;
 
-import CampusProjectSolutions.pages.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

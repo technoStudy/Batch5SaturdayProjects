@@ -13,23 +13,6 @@ public class TopMenu extends BasePage {
     @FindBy(css = "svg[data-icon='bars']")
     private WebElement moreButton;
 
-//    @FindBy(xpath = "//button//span[text()='Setup']")
-//    private WebElement setupMenu;
-//
-//    @FindBy(xpath = "//button//span[text()='School Setup']")
-//    private WebElement schoolSetupMenu;
-//
-//    @FindBy(xpath = "//button//span[text()='Departments']")
-//    private WebElement departmentsMenu;
-//
-//    @FindBy(xpath = "//button//span[text()='Messaging']")
-//    private WebElement messagingMenu;
-//
-//    @FindBy(xpath = "//button//span[text()='Student']")
-//    private WebElement studentMenu;
-
-
-
     private WebElement getTopMenuItem(String menuName) {
         return getDynamicElement(LocatorType.XPATH, "//button//span[text()='" + menuName + "']");
     }

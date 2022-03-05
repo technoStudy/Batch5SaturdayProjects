@@ -6,8 +6,8 @@
             </run>
         </groups>
         <classes>
-            <class name="CampusProjectSolutions.tests.Hook"/>
-            <class name="CampusProjectSolutions.tests.Project15Tests"/>
+            <class name="project15.solution.tests.Hook"/>
+            <class name="project15.solution.tests.Project15Tests"/>
         </classes>
     </test>
 </suite>
