@@ -21,19 +21,47 @@ public class LoginPage extends BasePage {
     @FindBy(css = "button.consent-give")
     private WebElement acceptAllCookiesButton;
 
-    public void enterUsername(String username){
+    @FindBy(xpath = "//div[text()='Invalid username or password']")
+    private WebElement loginErrorMessage;
+
+    @FindBy(css = "button[aria-label='Close']")
+    private WebElement dialogBoxDismissButton;
+
+    @FindBy(xpath = "//mat-error[contains(text(), 'Email is required')] ")
+    private WebElement usernameRequiredMessage;
+
+    @FindBy(xpath = "//mat-error[contains(text(), 'Password is required')] ")
+    private WebElement passwordRequiredMessage;
+
+    public void enterUsername(String username) {
         sendKeysToElement(usernameTextBox, username);
     }
 
-    public void enterPassword(String password){
+    public void enterPassword(String password) {
         sendKeysToElement(passwordTextBox, password);
     }
 
-    public void clickOnLoginButton(){
+    public void clickOnLoginButton() {
         clickOnElement(loginButton);
     }
 
-    public void clickOnAcceptAllCookiesButton(){
+    public void clickOnAcceptAllCookiesButton() {
         clickOnElement(acceptAllCookiesButton);
+    }
+
+    public String getLoginErrorMessage() {
+        return getTextOf(loginErrorMessage);
+    }
+
+    public void dismissErrorMessageBox() {
+        clickOnElement(dialogBoxDismissButton);
+    }
+
+    public String getUsernameRequiredMessage() {
+        return getTextOf(usernameRequiredMessage).trim();
+    }
+
+    public String getPasswordRequiredMessage() {
+        return getTextOf(passwordRequiredMessage).trim();
     }
 }

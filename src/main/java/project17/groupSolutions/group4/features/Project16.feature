@@ -1,7 +1,6 @@
-@Project16
 Feature: School Department Tests
 
-  @First
+  @Project16
   Scenario: "Create School Department" Happy Path Testing
     Given Navigate to School Departments Menu
     And Click on Plus Icon
@@ -18,6 +17,7 @@ Feature: School Department Tests
     And Close modal window
     And Click on Plus Icon
 
+  @Project16
   Scenario Outline: "Create School Department" Negative Testing
     Given Enter School Department with name "<department name>" and code "<code>"
     When Save the School Department
@@ -28,6 +28,7 @@ Feature: School Department Tests
       | High School         | HSC-1 | There is already Department with \"High School\" name! |
       | High School Classes | HS-1  | There is already Department with \"HS-1\" code!        |
 
+  @Project16
   Scenario: Edit School Department Test
     Given Close modal window
     And Click on School Department row with name "High School"
@@ -38,6 +39,7 @@ Feature: School Department Tests
     And Click on School Department row with name "High School Classes"
     And Open Section Tab
 
+  @Project16
   Scenario Outline: Create Sections Test
     When Create section with name "<name>" and short name "<short name>"
     Then Verify Section with name "<name>" and short name "<short name>"
@@ -47,6 +49,7 @@ Feature: School Department Tests
       | Sophomore Classes            | Sophomores   |
       | College Credit Plus Students | CC+ Students |
 
+  @Project16
   Scenario: Delete School Department Test
     Given Close modal window
     When Delete School Department

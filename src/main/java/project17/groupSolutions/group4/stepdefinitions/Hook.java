@@ -1,20 +1,19 @@
-package CampusProjectSolutions.stepdefinitions;
+package project17.groupSolutions.group4.stepdefinitions;
 
-import CampusProjectSolutions.pages.LoginPage;
-import CampusProjectSolutions.utilities.Driver;
-import CampusProjectSolutions.utilities.ReadFromConfigFile;
-import io.cucumber.java.AfterAll;
-import io.cucumber.java.BeforeAll;
+import io.cucumber.java.*;
+import project17.groupSolutions.group4.pages.LoginPage;
+import utilities.Driver;
+import project17.groupSolutions.group4.utilities.ReadFromConfigFile;
 
 public class Hook {
 
-    @BeforeAll(order = 1)
+    @Before(order = 1)
     public static void navigateToLoginPage(){
         Driver.getDriver().manage().window().maximize();
         Driver.getDriver().get(ReadFromConfigFile.getValueFor("homepage"));
     }
 
-    @BeforeAll(order = 2)
+    @Before(order = 2, value="@Project16")
     public static  void login(){
         LoginPage loginPage = new LoginPage();
         loginPage.clickOnAcceptAllCookiesButton();
@@ -23,7 +22,7 @@ public class Hook {
         loginPage.clickOnLoginButton();
     }
 
-    @AfterAll
+    @After
     public static void closeBrowser(){
         Driver.quitDriver();
     }

@@ -1,11 +1,11 @@
-package CampusProjectSolutions.runners;
+package runners;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = {"src/main/java/CampusProjectSolutions/features"},
-        glue = {"CampusProjectSolutions.stepDefinitions"},
+        glue = {"stepdefinitions"},
         plugin = {"pretty",
                 "html:target/Project16TestsReport.html",
                 "json:target/Project16Tests-report.json"},

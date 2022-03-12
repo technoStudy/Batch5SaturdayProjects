@@ -1,4 +1,4 @@
-package CampusProjectSolutions.stepdefinitions;
+package CampusProjectSolutions.stepDefinitions;
 
 import CampusProjectSolutions.pages.SchoolDepartmentsPage;
 import CampusProjectSolutions.pages.TopMenu;

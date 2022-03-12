@@ -1,12 +1,11 @@
-package CampusProjectSolutions.pages;
+package project17.groupSolutions.group4.pages;
 
-import CampusProjectSolutions.enums.LocatorType;
-import CampusProjectSolutions.utilities.Driver;
+import project17.groupSolutions.group4.enums.LocatorType;
+import utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.ArrayList;
@@ -73,14 +72,5 @@ public class BasePage {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-    }
-
-    protected boolean isElementDisplayed(WebElement element){
-       wait.until(ExpectedConditions.visibilityOf(element));
-       return element.isDisplayed();
-    }
-
-    public void refreshPage(){
-        driver.navigate().refresh();
     }
 }
