@@ -1,0 +1,13 @@
+<suite name="Regression Test Suite">
+    <test name="Regression Test Run">
+        <groups>
+            <run>
+                <include name="Regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="project16.groupSolutions.group1.StepDefinitions.Hook"/>
+            <class name="project16.groupSolutions.group1.StepDefinitions.CampusTests"/>
+        </classes>
+    </test>
+</suite>
