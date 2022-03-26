@@ -1,7 +1,8 @@
 package project19;
 
 /*
-API Endpoint: "/school-service/api/notifications"
+API Endpoint for GET, POST and PUT: "/school-service/api/notifications"
+API Endpoint for DELETE: "/school-service/api/notifications/{notification_id}"
 
 Test 1: Create Notification
         Inside body, you need to provide:
@@ -15,7 +16,7 @@ Test 1: Create Notification
 Test 2: (Try to) Re-create the same notification (Negative Testing)
         Verify that the Status Code is 400
 
-Test 3: Edit the created Notification (Edit name and short name)
+Test 3: Edit the name of the created Notification
         Verify that the Status Code is 200
 
 Test 4: Delete the created Notification
