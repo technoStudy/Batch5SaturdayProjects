@@ -103,7 +103,8 @@ public class NotificationApiTests {
     @Test(dependsOnMethods = "deleteNotificationTest")
     public void deleteNotificationNegativeTest() {
         given()
-                .spec(requestSpec)
+                .cookies(loginCookie)
+                .contentType(ContentType.JSON)
                 .when()
                 .delete(BASE_URL.concat("/school-service/api/notifications").concat(notificationId))
                 .then()
